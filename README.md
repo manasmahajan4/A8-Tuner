@@ -6,6 +6,8 @@
 
 ![](images/A8_Tuner_SS.png)
 
+Note: Uninstall the older A8 Tuner App before installing the newer version.
+
 ## Features
 
 * Configurable MAX & PRO upgrades
