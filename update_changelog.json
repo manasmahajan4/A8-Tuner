@@ -1,8 +1,8 @@
 {
-  "latestVersion": "1",
-  "latestVersionCode": "1",
+  "latestVersion": "1.0",
+  "latestVersionCode": "17",
   "url": "about:blank",
   "releaseNotes": [
-    "- Holder"
+    "- First Release"
   ]
 }
