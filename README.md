@@ -1,6 +1,6 @@
 # A8 Tuner - A Vehicle Tuner Simulator for Vehicles of Asphalt 8: Airborne
 
-[![Download](https://img.shields.io/badge/Download-Latest%20APK-blue.svg)](https://github.com/adnyey/A8-Tuner/releases/download/1.0/1.0.-.23.Aug.2018.apk)
+[![Download](https://img.shields.io/badge/Download-Latest%20APK-blue.svg)](https://www.dropbox.com/s/k0j78f0b6j6s4od/A8_Tuner1.0%20-%2023%20Aug%202018.apk?dl=1)
 ![Size](https://img.shields.io/badge/Size-2.9%20MB-lightgrey.svg)
 [![Licence](https://img.shields.io/badge/Licence-CC%20BY--NC%204.0-orange.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
