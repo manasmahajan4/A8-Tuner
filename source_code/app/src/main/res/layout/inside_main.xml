@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id='@+id/titlee'
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="0.1"
+        android:text="Saved Tunes"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/saved_tunes"
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <LinearLayout
+        android:id="@+id/ops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <com.brouding.blockbutton.BlockButton
+            android:id="@+id/settings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="2.5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:buttonColor="#1E88E5"
+            app:buttonDisabledColor="#999999"
+            app:buttonDisabledGapColor="#AA999999"
+            app:buttonGapColor="#1565C0"
+            app:pushDepthDp="2">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_settings_white_48dp_2x" />
+        </com.brouding.blockbutton.BlockButton>
+
+        <com.brouding.blockbutton.BlockButton
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:buttonColor="#FF9800"
+            app:buttonDisabledColor="#999999"
+            app:buttonDisabledGapColor="#AA999999"
+            app:buttonGapColor="#F57C00"
+            app:pushDepthDp="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="ABOUT"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </com.brouding.blockbutton.BlockButton>
+
+        <com.brouding.blockbutton.BlockButton
+            android:id="@+id/start_tuning"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:buttonColor="#009688"
+            app:buttonDisabledColor="#999999"
+            app:buttonDisabledGapColor="#AA999999"
+            app:buttonGapColor="#00796B"
+            app:pushDepthDp="2">
+
+            <TextView
+                android:id="@+id/sp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="START TUNING"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </com.brouding.blockbutton.BlockButton>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Units"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:textAllCaps="true"
+        android:layout_height="wrap_content" />
+    <com.brouding.blockbutton.BlockButton
+        android:id="@+id/units"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="2.5dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:buttonColor="#FF9800"
+        app:buttonDisabledColor="#999999"
+        app:buttonDisabledGapColor="#AA999999"
+        app:buttonGapColor="#F57C00"
+        app:pushDepthDp="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/unit_text"
+            android:text="km/h"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </com.brouding.blockbutton.BlockButton>
+</LinearLayout>

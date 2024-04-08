@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_weight="20"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.brouding.blockbutton.BlockButton
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="2.5dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:buttonColor="#1E88E5"
+                        app:buttonDisabledColor="#999999"
+                        app:buttonDisabledGapColor="#AA999999"
+                        app:buttonGapColor="#1565C0"
+                        app:pushDepthDp="2">
+
+                        <TextView
+                            android:id="@+id/car_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Vulcan"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+                    </com.brouding.blockbutton.BlockButton>
+
+                    <com.brouding.blockbutton.BlockButton
+                        android:id="@+id/save"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="2.5dp"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:buttonColor="#1E88E5"
+                        app:buttonDisabledColor="#999999"
+                        app:buttonDisabledGapColor="#AA999999"
+                        app:buttonGapColor="#1565C0"
+                        app:pushDepthDp="2">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_save_white_48dp" />
+                    </com.brouding.blockbutton.BlockButton>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RANK 1442 / 1600"
+                    android:textAllCaps="true"
+                    android:textColor="#2196F3"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:text="@string/accel"
+                            android:textAllCaps="true"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/accel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:paddingLeft="30sp"
+                            android:text="0"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:text="@string/top_speed"
+                            android:textAllCaps="true"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/top_speed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:paddingLeft="30sp"
+                            android:text="0"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:text="@string/handling"
+                            android:textAllCaps="true"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/handling"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:paddingLeft="30sp"
+                            android:text="0"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:text="@string/nitro"
+                            android:textAllCaps="true"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/nitro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:paddingLeft="30sp"
+                            android:text="0"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="0"
+                            android:text="@string/total_speed"
+                            android:textAllCaps="true"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/total_speed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:paddingLeft="30sp"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/ups"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:background="@drawable/app_back"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/accel"
+                                    android:textAllCaps="true"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="1"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/top_speed"
+                                    android:textAllCaps="true"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/handling"
+                                    android:textAllCaps="true"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="3"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/nitro"
+                                    android:textAllCaps="true"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_height="match_parent"
+                                    android:layout_column="0"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.brouding.blockbutton.BlockButton
+                                        android:id="@+id/plus_accel"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="85dp"
+                                        android:layout_marginRight="2.5dp"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="8dp"
+                                        android:paddingRight="8dp"
+                                        app:buttonColor="#8BC34A"
+                                        app:buttonDisabledColor="#999999"
+                                        app:buttonDisabledGapColor="#AA999999"
+                                        app:buttonGapColor="#689F38"
+                                        app:pushDepthDp="2">
+
+                                        <ImageView
+                                            android:id="@+id/img_accel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="50dp"
+                                            android:scaleType="fitCenter"
+                                            android:src="@drawable/accel_1" />
+
+                                        <TextView
+                                            android:id="@+id/lvl_accel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:padding="2dp"
+                                            android:text="LVL 1"
+                                            android:textColor="#ffffff"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+                                    </com.brouding.blockbutton.BlockButton>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_height="match_parent"
+                                    android:layout_column="1"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.brouding.blockbutton.BlockButton
+                                        android:id="@+id/plus_top"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="85dp"
+                                        android:layout_marginLeft="2.5dp"
+                                        android:layout_marginRight="2.5dp"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="8dp"
+                                        android:paddingRight="8dp"
+                                        app:buttonColor="#8BC34A"
+                                        app:buttonDisabledColor="#999999"
+                                        app:buttonDisabledGapColor="#AA999999"
+                                        app:buttonGapColor="#689F38"
+                                        app:pushDepthDp="2">
+
+                                        <ImageView
+                                            android:id="@+id/img_top"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/top_1" />
+
+                                        <TextView
+                                            android:id="@+id/lvl_top"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:padding="2dp"
+                                            android:text="LVL 1"
+                                            android:textColor="#ffffff"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+                                    </com.brouding.blockbutton.BlockButton>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_height="match_parent"
+                                    android:layout_column="2"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.brouding.blockbutton.BlockButton
+                                        android:id="@+id/plus_hand"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="85dp"
+                                        android:layout_marginLeft="2.5dp"
+                                        android:layout_marginRight="2.5dp"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="8dp"
+                                        android:paddingRight="8dp"
+                                        app:buttonColor="#8BC34A"
+                                        app:buttonDisabledColor="#999999"
+                                        app:buttonDisabledGapColor="#AA999999"
+                                        app:buttonGapColor="#689F38"
+                                        app:pushDepthDp="2">
+
+                                        <ImageView
+                                            android:id="@+id/img_hand"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/hand_1" />
+
+                                        <TextView
+                                            android:id="@+id/lvl_hand"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:padding="2dp"
+                                            android:text="LVL 1"
+                                            android:textColor="#ffffff"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+                                    </com.brouding.blockbutton.BlockButton>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_height="match_parent"
+                                    android:layout_column="3"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.brouding.blockbutton.BlockButton
+                                        android:id="@+id/plus_nitro"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="85dp"
+                                        android:layout_marginLeft="2.5dp"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="8dp"
+                                        android:paddingRight="8dp"
+                                        app:buttonColor="#8BC34A"
+                                        app:buttonDisabledColor="#999999"
+                                        app:buttonDisabledGapColor="#AA999999"
+                                        app:buttonGapColor="#689F38"
+                                        app:pushDepthDp="2">
+
+                                        <ImageView
+                                            android:id="@+id/img_nitro"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/nitro_1" />
+
+                                        <TextView
+                                            android:id="@+id/lvl_nitro"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:padding="2dp"
+                                            android:text="LVL 1"
+                                            android:textColor="#ffffff"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+                                    </com.brouding.blockbutton.BlockButton>
+                                </LinearLayout>
+                            </TableRow>
+                        </TableLayout>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <TableRow android:padding="5dp" />
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/tires"
+                                    android:textAllCaps="true"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="1"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/susp"
+                                    android:textAllCaps="true"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="2"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/drive"
+                                    android:textAllCaps="true"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="3"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/exha"
+                                    android:textAllCaps="true"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <LinearLayout
+                                    android:layout_column="0"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.brouding.blockbutton.BlockButton
+                                        android:id="@+id/plus_tires"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="85dp"
+                                        android:layout_marginRight="2.5dp"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="8dp"
+                                        android:paddingRight="8dp"
+                                        app:buttonColor="#4FC3F7"
+                                        app:buttonDisabledColor="#999999"
+                                        app:buttonDisabledGapColor="#AA999999"
+                                        app:buttonGapColor="#03A9F4"
+                                        app:pushDepthDp="2">
+
+                                        <ImageView
+                                            android:id="@+id/img_tires"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/tire_a" />
+
+                                        <TextView
+                                            android:id="@+id/lvl_tires"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:padding="2dp"
+                                            android:text="LVL 1"
+                                            android:textColor="#ffffff"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+                                    </com.brouding.blockbutton.BlockButton>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_column="1"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.brouding.blockbutton.BlockButton
+                                        android:id="@+id/plus_susp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="85dp"
+                                        android:layout_marginLeft="2.5dp"
+                                        android:layout_marginRight="2.5dp"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="8dp"
+                                        android:paddingRight="8dp"
+                                        app:buttonColor="#4FC3F7"
+                                        app:buttonDisabledColor="#999999"
+                                        app:buttonDisabledGapColor="#AA999999"
+                                        app:buttonGapColor="#03A9F4"
+                                        app:pushDepthDp="2">
+
+                                        <ImageView
+                                            android:id="@+id/img_susp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/susp_a" />
+
+                                        <TextView
+                                            android:id="@+id/lvl_susp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:padding="2dp"
+                                            android:text="LVL 1"
+                                            android:textColor="#ffffff"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+                                    </com.brouding.blockbutton.BlockButton>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_column="2"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.brouding.blockbutton.BlockButton
+                                        android:id="@+id/plus_drive"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="85dp"
+                                        android:layout_marginLeft="2.5dp"
+                                        android:layout_marginRight="2.5dp"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="8dp"
+                                        android:paddingRight="8dp"
+                                        app:buttonColor="#4FC3F7"
+                                        app:buttonDisabledColor="#999999"
+                                        app:buttonDisabledGapColor="#AA999999"
+                                        app:buttonGapColor="#03A9F4"
+                                        app:pushDepthDp="2">
+
+                                        <ImageView
+                                            android:id="@+id/img_drive"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/drive_a" />
+
+                                        <TextView
+                                            android:id="@+id/lvl_drive"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:padding="2dp"
+                                            android:text="LVL 1"
+                                            android:textColor="#ffffff"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+                                    </com.brouding.blockbutton.BlockButton>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_column="3"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <com.brouding.blockbutton.BlockButton
+                                        android:id="@+id/plus_exha"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="85dp"
+                                        android:layout_marginLeft="2.5dp"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="8dp"
+                                        android:paddingRight="8dp"
+                                        app:buttonColor="#4FC3F7"
+                                        app:buttonDisabledColor="#999999"
+                                        app:buttonDisabledGapColor="#AA999999"
+                                        app:buttonGapColor="#03A9F4"
+                                        app:pushDepthDp="2">
+
+                                        <ImageView
+                                            android:id="@+id/img_exha"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/exha_a" />
+
+                                        <TextView
+                                            android:id="@+id/lvl_exha"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:padding="2dp"
+                                            android:text="LVL 1"
+                                            android:textColor="#ffffff"
+                                            android:textSize="16dp"
+                                            android:textStyle="bold" />
+
+                                    </com.brouding.blockbutton.BlockButton>
+                                </LinearLayout>
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <com.brouding.blockbutton.BlockButton
+                android:id="@+id/tk"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:buttonColor="#FF9800"
+                app:buttonDisabledColor="#999999"
+                app:buttonDisabledGapColor="#AA999999"
+                app:buttonGapColor="#F57C00"
+                app:pushDepthDp="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="TUNING KIT"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </com.brouding.blockbutton.BlockButton>
+
+            <com.brouding.blockbutton.BlockButton
+                android:id="@+id/real"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                app:buttonColor="#009688"
+                app:buttonDisabledColor="#999999"
+                app:buttonDisabledGapColor="#AA999999"
+                app:buttonGapColor="#00796B"
+                app:pushDepthDp="2">
+
+                <TextView
+                    android:id="@+id/sp_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="DISPLAY SPEED"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </com.brouding.blockbutton.BlockButton>
+
+            <com.brouding.blockbutton.BlockButton
+                android:id="@+id/reset"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="2.5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                app:buttonColor="#F44336"
+                app:buttonDisabledColor="#999999"
+                app:buttonDisabledGapColor="#AA999999"
+                app:buttonGapColor="#D32F2F"
+                app:pushDepthDp="2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/reser" />
+
+            </com.brouding.blockbutton.BlockButton>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
